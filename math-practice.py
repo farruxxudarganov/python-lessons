@@ -96,3 +96,7 @@ e = a / (math.pow(x, 2) + b / (math.pow(y, 2) + c / d))
 f = 1 / (1+ math.cos(x) + 1 / math.sin(math.fabs(x)))
 t11=e+f
 print("%.2f" % t11)
+
+a=int(input("a: "))
+b=int(input("b: "))
+print(a+b)

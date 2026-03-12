@@ -45,12 +45,3 @@
 #         continue
 #     else:
 #         print(son)
-    
-savol = "Sevgan kitobingizni kiriting"
-savol += "(barcha kitoblarni kiritib bo'lgach 'exit' deb yozing): "
-
-while True:
-    kitoblar = input(savol)
-    if kitoblar == 'exit':
-        break
-print("Sorov to'xtadi")

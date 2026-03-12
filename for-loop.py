@@ -228,5 +228,9 @@ b = 3
 # print(a, b)
 
 # 2 - usul
-a, b = b, a 
+# a, b = b, a 
+# print(a, b)
+
+# 3 - usul 
+[a,b] = [b, a]
 print(a, b)
