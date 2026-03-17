@@ -64,3 +64,5 @@ bozorlik = ['anor', 'uzum', 'anjir', 'shaftoli']
 print("Do'konimizdagi mahsulotlar:")    
 for mahsulot in sorted(mahsulotlar):
     print(mahsulot.title())
+for narx in mahsulotlar.values():
+    print(narx)
