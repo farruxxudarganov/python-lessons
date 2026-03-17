@@ -36,7 +36,7 @@ print(user)
 user["age"] = 15
 user["email"] = "xudarganov_f7@gmail.com"
 
-# Bo'sh lug'at(empty dictionary)
+# 4. Bo'sh lug'at(empty dictionary)
 talaba_1 = {}
 
 talaba_1["ism"] = "qobil rasulov"
@@ -44,3 +44,22 @@ talaba_1["kurs"] = 3
 talaba_1["yosh"] = 20
 print(talaba_1)
 print(f"Talaba {talaba_1['ism'].title()} {talaba_1['kurs']}-kurs ")
+
+# 5. Key-value juftligini o'chirish
+talaba_0 = {'ism':'murod olimov','yosh':20,'t_yil':2000}
+print(talaba_0)
+del talaba_0['yosh'] # yosh degan kalit so'z (va qiymatni) o'chiramiz
+print(talaba_0)
+
+# 6. get() metodi  
+telefonlar = {
+    "ali": "iPhone X",
+    "vali": "Galaxy S9",
+    "olim": "MI 10 Pro",
+    "orif": "Nokia 3310"
+}
+phone = telefonlar["ali"]
+print(f"ali ning telefoni {phone}")
+print(telefonlar.get("vali")) #galaxy s9
+print(telefonlar.get("akmal")) #None
+
