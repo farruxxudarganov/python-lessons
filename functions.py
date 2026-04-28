@@ -26,9 +26,20 @@
 # yigindi(5, 10)
 # yigindi(3, 7)
 
-def yosh_hisobla(ism, tugilgan_yil):
-    yosh = 2026 - tugilgan_yil
-    print(f"{ism}ning yoshi: {yosh}")
+# default vaulue 
+# def yosh_hisobla(ism = "Olim", tugilgan_yil = 1980):
+#     yosh = 2026 - tugilgan_yil
+#     print(f"{ism}ning yoshi: {yosh}")
 
-yosh_hisobla("Ismoil", 2000) # Ismoilning yoshi: 26
-yosh_hisobla("Gulbahor", 1995) # Gulbahorning yoshi: 31
+# yosh_hisobla("Ismoil", 2000) # Ismoilning yoshi: 26
+# yosh_hisobla("Gulbahor", 1995) # Gulbahorning yoshi: 31
+# yosh_hisobla() # Olimning yoshi: 46
+# yosh_hisobla("Jumagul", 1960) # Jumagulning yoshi: 66
+# yosh_hisobla()
+
+def yosh_hisobla(tugilgan_yil, joriy_yil=2020):
+    """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+    
+tyil = int(input("Tug'ilgan yilingizni kiriting: "))
+yosh_hisobla(tyil)

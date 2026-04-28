@@ -24,11 +24,18 @@
 # toq_juft_hisobla(son)
 
 # 4
-def tenglikni_tekshirish(a, b):
-    if a == b:
-        print(f"{a} va {b} teng")
-    else:
-        print(f"{a} va {b} teng emas")
-a = int(input("Birinchi sonni kiriting: "))
-b = int(input("Ikkinchi sonni kiriting: "))
-tenglikni_tekshirish(a, b)
+# def tenglikni_tekshirish(a, b):
+#     if a == b:
+#         print(f"{a} va {b} teng")
+#     else:
+#         print(f"{a} va {b} teng emas")
+# a = int(input("Birinchi sonni kiriting: "))
+# b = int(input("Ikkinchi sonni kiriting: "))
+# tenglikni_tekshirish(a, b)
+
+# # 5 va 6
+# def daraja_hisobla(x, y=2):
+#     print(f"{x} ning {y} darajasi: {x**y}")
+# x = int(input("Birinchi sonni kiriting: "))
+# y = int(input("Ikkinchi sonni kiriting: "))
+# daraja_hisobla(x, y)

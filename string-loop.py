@@ -19,21 +19,24 @@ text = "Python Lessons"
 #     print(index , text[index])
 
 
-txt = "Bugun darsga Xursandbek kelmadi"
-#  in operatori - string ichida ma'lum bir belgining bor yoki yo'qligini tekshirish uchun ishlatiladi
-print("Xursandbek" in txt) # True
-print("Asadbek" in txt) # False
-print("y" in txt) # False
-print("a" in txt) # True
+# txt = "Bugun darsga Xursandbek kelmadi"
+# #  in operatori - string ichida ma'lum bir belgining bor yoki yo'qligini tekshirish uchun ishlatiladi
+# print("Xursandbek" in txt) # True
+# print("Asadbek" in txt) # False
+# print("y" in txt) # False
+# print("a" in txt) # True
 
 # unli haflar (a, e, i, o, u)
 # Example "Salom" -> 2 unli harf(a, o)
 
-vowels = "aeiou"
-def count_vowels(word):
-    count= 0
-    for letter in word:
-        if letter in vowels:
-            count += 1
-    return count
-print(count_vowels("Salom")) 
+# vowels = "aeiou"
+# def count_vowels(word):
+#     count= 0
+#     for letter in word.lower():
+#         if letter in vowels:
+#             count += 1
+#     return count
+# print(count_vowels("Salom"))  # Output: 2
+# print(count_vowels("Python")) # Output: 1
+# print(count_vowels("bbb"))   # Output: 0
+
