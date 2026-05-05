@@ -11,7 +11,7 @@
 # *args
 # def summa(*sonlar):
 #     # print(sonlar)
-#     # print(type(sonlar)) #tuople
+#     # print(type(sonlar)) #tuple
 #     yigindi = 0
 #     for son in sonlar:
 #         yigindi += son
@@ -31,11 +31,45 @@
 # print(summa(2))
 
 # **kwargs
-def avto_info(kompaniya, model, **malumotlar):
-    # print(malumotlar) # {'key': value}
-    # print(type(malumotlar)) #dict
-     malumotlar['kompaniya'] = kompaniya
-     malumotlar['model'] = model
+# def avto_info(kompaniya, model, **malumotlar):
+#     # print(malumotlar) # {'key': value}
+#     # print(type(malumotlar)) #dict
+#      malumotlar['kompaniya'] = kompaniya
+#      malumotlar['model'] = model
 
-     return malumotlar
-print(avto_info("GM Uzbekistan", "Onix", rang='qora', yil='2025'))
+#      return malumotlar
+# print(avto_info("GM Uzbekistan", "Onix", rang='qora', yil='2025'))
+# print(avto_info("Kia", "K5", rang='qizil', narh=35000))
+
+
+# def my_function(**kid):
+#     print("His last name is " + kid("lname"))
+
+# my_function(fname = 'Tobias', lname = 'Refsnes')
+# 1
+# def multiply(*num):
+#     s=1
+#     for nums in num:
+#         s *= nums
+#     return s
+# print(multiply(2, 4, 2, 6, 7, 1, 10))
+
+
+# # 2
+# def student_name(fname, lname, **malumotlar):
+#     malumotlar['ism'] = fname
+#     malumotlar['familiya'] = lname
+
+#     return malumotlar
+# print(student_name("Ali", "Valiyev", yosh='19'))
+
+def find_max(*number):
+    if len(number) == 0:
+        return None
+    max_value = number[0]
+    for son in number:
+       if son > max_value:
+           max_value = son
+    return max_value
+print(find_max(1,5,12,17,61,12,21))
+
